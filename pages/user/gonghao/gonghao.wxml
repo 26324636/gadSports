@@ -1,0 +1,47 @@
+<view class='cont'>
+  <view class='cont-big'>
+    <view class='cont-ipm'>
+      <view class='cont-head'>
+        <view class='Firsttitle'>工号绑定</view>
+        <view class='Secondtitle'>Worker number binding</view>
+      </view>
+      <view class='cont-middle'>
+        <view class='cont-middle-input'>
+          <input   bindinput='watchID' type='text'   placeholder="请输入工号" />
+        </view>
+    <view class='cont-middle-input'>
+          <input  bindinput='watchPass' type='text'   placeholder="请输入姓名" />
+        </view>
+ 
+    
+<!-- 
+            <view class='cont-middle-input'>
+      
+                   
+      <picker  class='type-text' bindchange="bindPickerChange" mode ="selector"  value="{{index}}" data-typeid='{{typeArray[typeIndex].id}}' range-key="type" range="{{typeArray}}">
+        <view class="picker">{{typeArray[typeIndex].type}}</view>
+      </picker>
+        </view> -->
+
+     
+      
+        <view class='cont-middle-help'>
+          温馨提示:
+          <ul>
+            <li>1.此学号仅可用自己的学号绑定</li>
+            <li>2.密码请输入身份证后六位</li>
+            <li>3.绑定后无法更改</li>
+          </ul>
+        </view>
+      </view>
+      <view class='cont-bottom'>
+        <view class='cont-btn'>
+          <button bindtap="tijiao"> 提交</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='cont-bg'></view>
+</view>

@@ -1,0 +1,57 @@
+{
+  "pages": [
+      
+    "pages/index/index",
+    "pages/start/start",
+    "pages/logs/logs",
+"pages/add/add",
+   
+    "pages/user/index",
+    "pages/user/gonghao/gonghao",
+    "pages/Record/Record",
+    "pages/PatchCard/PatchCard",
+    "pages/cardDetail/cardDetail",
+    "pages/Patch/Patch",
+    "pages/user/banding/banding",
+    "pages/cardDetail2/cardDetail2"
+
+
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请提供你的位置"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#CECECE",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "selectedIconPath": "images/shouye1.png",
+        "iconPath": "images/shouye.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+
+      {
+        "selectedIconPath": "images/daka1.png",
+        "iconPath": "images/daka.png",
+        "pagePath": "pages/PatchCard/PatchCard",
+        "text": "历程"
+      },
+      {
+        "selectedIconPath": "images/wode1.png",
+        "iconPath": "images/wode.png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

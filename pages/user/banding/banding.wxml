@@ -1,0 +1,17 @@
+<!--pages/user/banding/banding.wxml-->
+  <view>
+
+    <view class='cont-ipm'>
+      <view class='cont-head' style='padding-top:200rpx;'>
+        <view class='Firsttitle'>您的工号已绑定</view>
+        <view class='Secondtitle'>Your worker number has been bound.</view>
+      </view>
+
+      <view class='cont-middle-help' style='text-align:center; background:none;'>
+        温馨提示:需修改绑定信息请与客服联系
+
+      </view>
+
+    </view>
+      <view class='cont-bg'></view>
+  </view>

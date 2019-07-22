@@ -1,0 +1,26 @@
+<view class='my'>
+  <view class='userInfo'>
+  <view wx:if="{{userInfo}}">
+    <view class='topColor'></view>
+    <image class='userinfo-avator' mode='aspectFill' src='{{userInfo.avatar}}'></image>
+    <view class='userinfo-name'>{{userInfo.userName}}</view>
+    </view>
+  </view>
+  <view class='my-list'>
+    <view class='keFu' bindtap='tobind'>
+      <view class='iconfont icon-cebianlan_wodeqiajuan'></view>
+      <view class='Help-text'>绑定工号</view>
+      <view class='iconfont icon-you'></view>
+    </view>
+    <button class='keFu' open-type="contact"> 
+      <view class='iconfont icon-kefu'></view>
+      <view class='keFu-text'>客服中心</view>
+      <view class='iconfont icon-you'></view>
+    </button>
+    <view class='Help' bindtap='tojilu'>
+      <view class='iconfont icon-my-help'></view>
+      <view class='Help-text'>打卡记录</view>
+      <view class='iconfont icon-you'></view>
+    </view>
+  </view>
+</view>

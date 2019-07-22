@@ -1,0 +1,15 @@
+<view class='start_box'>
+<view wx:if="{{canIUse}}" >
+    <view class='header'>
+        <image mode="aspectFill" src='https://www.gadstru.cn/punchImage/background/background_20190614094004_99930393.png?tdsourcetag=s_pcqq_aiomsg'></image>
+        <view>Gad打卡</view>
+    </view>
+    <view class='content'>
+        <view>申请获取以下权限:</view>
+        <view class='content_info'>获得你的公开信息(昵称，头像等)</view>
+    </view>
+    
+    <button class='bottom' open-type="getUserInfo"bindgetuserinfo="bindGetUserInfo">微信授权登录</button>
+</view>
+<view wx:else>请升级微信版本</view>
+</view>

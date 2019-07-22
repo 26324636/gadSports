@@ -1,0 +1,21 @@
+<!--pages/daka/daka.wxml-->
+
+<view class='jilu-page'>
+<view class='jilu' bindtap='detail' id="{{item.id}}" wx:for="{{list}}">
+<view class='jilu-con'>
+<view class='touxiang'>
+<image src='{{userInfo.avatar}}'  mode='aspectFill'/>
+</view>
+<view class='sport'><view>{{item.type}}:{{item.amount}}</view></view>
+</view>
+<view class='jilu-con2'>
+<view class='font'>
+<view class='time'>{{item.duration}}</view>
+<view class='card'>已打卡</view>
+</view>
+</view>
+</view>
+
+
+
+</view>

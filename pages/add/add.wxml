@@ -1,0 +1,44 @@
+<view class='add-page'>
+  <view class='addPic'>
+    <view class='addPicNoPic' bindtap='addPic' wx:if="{{imgUrls.length == 0}}">
+      <view class='iconfont icon-tianjiazhaopian'></view>
+      <view class='addPicNoPic-text'>添加图片</view>
+    </view>
+    <view class='addPicHasPic' wx:if="{{imgUrls.length > 0}}">
+      <view class='addPicHasPic-btn' bindtap='addPic'>
+        <view class='iconfont icon-tianjiazhaopian'></view>
+        <view class='addPicNoPic-text'>添加图片</view>
+      </view>
+      <view class='imgList' wx:for="{{imgUrls}}" wx:key="key"> 
+        <image class='publishImg' src='{{item}}' mode='aspectFill'></image>
+        <view class='imgDel' data-index='{{index}}' catchtap='removePic'>x</view>
+      </view>
+    </view>
+  </view>
+      <view class='type'>
+      <view class='type-title'>分类</view>
+      <picker  class='type-text' bindchange="bindPickerChange" mode ="selector"  value="{{index}}" data-typeid='{{typeArray[typeIndex].id}}' range-key="type" range="{{typeArray}}">
+        <view class="picker">{{typeArray[typeIndex].type}}</view>
+      </picker>
+      <view class='type-arrow'>></view>
+    </view>
+        <view class='time'>
+      <view class='time-title'>运动时间/步数</view>
+      <input class='time-text'  placeholder-class='time-input' value='{{timebushu}}'  placeholder='请输入时间/步数' type='digit' bindinput='input_time'></input>
+    
+    </view>
+     <view class='time'>
+      <view class='time-title'>运动次数</view>
+      <input class='time-text' placeholder-class='time-input' placeholder='请输入运动次数' type='digit' bindinput='input_cishu' value='{{cishu}}'></input>
+    </view>
+         <!-- <view class='time'>
+      <view class='time-title'>运动量</view>
+      <input class='time-text' placeholder-class='time-input' placeholder='请输入运动量' type='digit' bindinput='input_tired'></input>
+    </view> -->
+        <!-- <view class='time'>
+      <view class='time-title'>是否审核 <checkbox class='shenhe' value='是否审核'></checkbox></view>
+     
+    </view> -->
+     <view class='barBottom' bindtap="{{buttonClicked?'daka':''}}">确认打卡
+  </view>
+</view>

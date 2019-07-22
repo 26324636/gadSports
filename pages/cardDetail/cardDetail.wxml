@@ -1,0 +1,54 @@
+<!--pages/cardDetail/cardDetail.wxml-->
+<view class='cardDetail-page'>
+  <view class='pic'>
+    <view class='head'>
+      <view class="jc">精彩时刻:</view>
+
+      <view class='my-pic'>
+      <view class='me2'  wx:if="{{isshow==0}}"><image src='../../images/xiyang.jpg' mode="aspectFill"></image></view>
+        <view class='me' wx:if="{{isshow==1}}">
+          <view class="con" wx:for="{{prove}}">
+            <image lazy-load="true" src='{{item}}' data-src="{{item}}" bindtap="previewImage"  mode="aspectFill"></image>
+          </view>
+      
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='pic2'>
+    <view class='head'>
+      <view class="jc">运动详情:</view>
+      <view class='all'>
+        <view class='sport'>
+          <view class='time'>
+            <view class='time-detail'>{{duration}}</view>
+            <view class='time-title'>健康每一天！</view>
+          </view>
+          <view class='user'>
+            <view class='touxiang'>
+              <image src='{{avatar}}'></image>
+            </view>
+            <view class='name'>
+              <view class='name-wanchen'>{{userName}}</view>
+              <view class='great'>太棒了，恭喜您完成了{{amount}}，继续加油哦！</view>
+            </view>
+          </view>
+          <view class='info'>
+          <view class='i-left'>
+          <view class='big'>{{distance}}</view>
+          <view class='danwei'>{{danwei}}</view>
+          </view>
+          <view class='i-middle'><view class='line'></view></view>
+           <view class='i-right'>
+           <view class='speed'><view class='tit'>状态</view><view class='speed-de'>正常</view></view>
+          <view class='speed'><view class='tit'>成绩</view><view class='speed-de'>良好</view></view>
+           </view>
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+</view>

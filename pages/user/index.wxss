@@ -1,0 +1,179 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1553096221817'); /* IE9 */
+  src: url('iconfont.eot?t=1553096221817#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+  url('iconfont.woff?t=1553096221817') format('woff'),
+  url('iconfont.ttf?t=1553096221817') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1553096221817#iconfont') format('svg'); /* iOS 4.1- */
+}
+.getPhone_box{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 500rpx;
+   height: 400rpx;
+   background-color: white;
+   position: relative;
+   margin: 200rpx auto;
+}
+.bandTitle{
+  position: absolute;
+  left: 130rpx;
+  top:50rpx;
+  font-size: 30rpx;
+}
+.bandRight{
+  border: 1px solid #666666;
+  border-radius: 40rpx;
+}
+.bindPhone{
+  position: absolute;
+  bottom: 0rpx;
+  width: 100%;
+  height: 80rpx;
+  font-size: 30rpx;
+  color:white;
+  text-align: center;
+  vertical-align: middle;
+}
+.phone{
+  font-size: 30rpx;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wodezichan0:before {
+  content: "\e63b";
+   color: rgba(252, 208, 11, 0.932);
+}
+
+.icon-my-help:before {
+  content: "\e60a";
+}
+
+.icon-shangjiaruzhu:before {
+  content: "\e645";
+  font-size: 12px;
+  color: rgba(252, 208, 11, 0.932)
+}
+
+.icon-cebianlan_wodeqiajuan:before {
+  content: "\e60b";
+     color: rgba(252, 208, 11, 0.932);
+ 
+}
+
+.icon-kefu:before {
+  content: "\e655";
+}
+
+.icon-shouhuodizhi:before {
+  content: "\e65e";
+  color: rgba(233, 100, 38, 0.808)
+}
+
+
+.icon-xiaoxizhongxin:before {
+  font-size: 12px;
+  content: "\e61f";
+}
+
+.icon-you:before {
+  content: "\e610";
+}
+page{
+   background-color: white;
+}
+.icon-wodezichan0{
+  color:rgba(6, 247, 135, 0.952)
+}
+.icon-icon2-copy{
+  color: rgba(148, 39, 141, 0.466)
+}
+.icon-wodezuji{
+  color: rgba(230, 110, 30, 0.932)
+}
+.icon-kefu{
+  color: rgba(226, 240, 34, 0.808)
+}
+.icon-my-help{
+  color: rgba(141, 136, 141, 0.822)
+}
+.iconfont{
+ margin-left: 60rpx;
+}
+.icon-you{
+  position: absolute;
+  right: 20rpx;
+}
+.my{
+   width: 100%;
+   height: 100%;
+}
+
+.userInfo{
+    width: 100%;
+    height: 380rpx;
+    position: relative;
+}
+.topColor{
+  background-color: black;
+  width: 100%;
+  height:90rpx;
+}
+.userinfo-avator{
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  border: 8rpx solid white;
+  left: 50%;
+  margin-left: -80rpx;
+  top: 0px;
+}
+.userinfo-name{
+  position: absolute;
+  width: 100%;
+  top:200rpx;
+  text-align: center;
+}
+.userinfo-phone{
+  position: absolute;
+  width: 100%;
+  top: 300rpx;
+  text-align: center;
+  color: rgba(141, 136, 141, 0.822)
+}
+
+.myCard,.myMoney,.myAddress, .Help,.keFu,.storeEnter, .newsCenter{
+  width: 100%;
+   height: 100rpx;
+    display: flex;
+  align-items: center;
+   border-bottom: 1rpx solid rgba(141, 136, 141, 0.055);
+   flex:1;
+}
+
+.myOrder-text,.myMoney-text, .myZuJi-text, .Help-text, .keFu-text,.newsCenter-text{
+      font-size: 28rpx;
+      margin-left: 30rpx;
+}
+button{
+  padding: 0px;
+  background-color: white;
+}
+button::after{
+  border: none;
+}

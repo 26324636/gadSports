@@ -1,0 +1,109 @@
+
+<!--pages/meishi/meishi-xiangqing/meishi-xiangqing.wxml-->
+<view  wx:if='{{isshow2}}' >
+<image class='img' mode='aspectFill' src='https://s2.ax1x.com/2019/04/26/EmdQTe.jpg'></image>
+<view class='box'>
+  <view class='box-font'>运动</view>
+  <view class='box-font2'>运动好处</view>
+  <view class='box-font3'>
+    <view class='box-font3-a1'>
+     <view class='iconfont icon-icon-dingwei'></view>
+     <view class='box-font3-a1-b'>非常好</view>
+    </view>
+    <view class='box-font3-a2'>
+      <view class='box-font3-a2-box'>
+        <view class='iconfont icon-daohang'></view>
+        <view class='box-font3-a2-box-font'>用处</view>
+      </view>
+      <view class='box-font3-a2-box'>
+        <view class='iconfont icon-weibiaoti-'></view>
+        <view class='box-font3-a2-box-font'></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='main'>
+  <view class='main-top'>
+    <view class='main-top-left'>介绍</view>
+  </view>
+  <view class="main-bottom"> 
+    <image class='img2' mode='aspectFill' src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1560437692&di=8685f12d05a732212c2ac559dcea4080&src=http://photocdn.sohu.com/20150214/mp2665853_1423906674374_2.jpeg'></image>
+    <view class='main-bottom-font'>运动，一种涉及体力和技巧且由一套规则或习惯所约束的行为活动，通常具有竞争性。没有不运动的物件，也没有能离开物件的运动。运动具守恒性，即运动既不能被创造又不能被消灭，其具体形式则是多样的并且能互相转化，在转化中运动总量不变。在几何中，刚性运动被描述为：平面到其自身的一个映射且使任意两点A,B的距离与其象A‘=M(A),B'=M(B)的距离相同。哲学上，运动的定义是：物在时空中的线性迁移。</view>
+  </view>
+  <view class="main-bottom"> 
+    <image class='img2' mode='aspectFill' src='http://www.juimg.com/tuku/yulantu/131229/328087-13122912430689.jpg'></image>
+    <view class='main-bottom-font'>一种涉及体力与技巧的有一套规则或习惯所约束的活动，通常具有竞争性。另一种是指以身体练习为基本手段，结合日光、空气、水等自然因素和健康卫生措施，达到增强体能、增进健康、丰富社会文化娱乐生活为目的的一种社会活动。体育对于促进身体的正常发育和发展、提高心理健康水平、增强社会适应能力、培养全面发展的人才具有重要的作用。二是指在学校教育环境中，指导学生学习和掌握体育的基本知识与技能，使他们形成体育锻炼意识，提高体育活动能力，增进健康的教育活动。</view>
+  </view>
+
+</view>
+</view>
+<view class='index-page' wx:if="{{isshow}}">
+  <view class='guanggao'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgurl}}">
+        <swiper-item>
+          <image mode='aspectFill' src="{{item.files}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='month-link'>
+
+    <view class='icon'>
+      <view class='iconfont icon-paihang'></view>
+      <view class='font'>月排行</view>
+    </view>
+    <view class='link-data'>
+      <view class='link'>
+      <view class='img-con'>
+ <image src='../../images/one.png' mode='aspectFill' ></image>
+  <image src='../../images/two.png' mode='aspectFill' ></image>
+   <image src='../../images/three.png' mode='aspectFill'></image>
+
+      </view>
+         <view class='link-con'>
+         <view class='user' wx:for="{{monthlist}}"><view>{{item.departmentNum}}--{{item.account}}</view></view>
+         </view>
+     
+          
+      </view>
+
+    </view>
+  </view>
+  <view class='week-link'>
+  <view class='icon'>
+      <view class='iconfont icon-paihangbang'></view>
+      <view class='font'>周排行</view>
+    </view>
+    <view class='link-data'>
+      <view class='link'>
+        <view class='img-con'>
+ <image src='../../images/fir.png' mode='aspectFill' ></image>
+  <image src='../../images/second.png' mode='aspectFill' ></image>
+   <image src='../../images/third.png' mode='aspectFill'></image>
+
+      </view>
+         <view class='link-con'>
+         <view class='user' wx:for="{{weeklist}}"><view>{{item.departmentNum}}--{{item.account}}</view></view>
+         </view>
+          
+      
+    
+      </view>
+
+    </view>
+  </view>
+  <view class='zhuangtai'>
+  <view class='daka'>
+  <view class='daka-flag'>{{zhuangtai}}</view>
+   <view class='juli'>{{yundong}}{{ammount}}</view>
+  </view>
+    <view class='ydcishu'>
+      <view class='daka-flag'>运动次数</view>
+   <view class='juli'>{{sum}}次</view>
+    </view>
+  </view>
+ <view class='btn'>
+<image src='../../images/btn.png'  bindtap="{{buttonClicked?'signClick':''}}" ></image>
+</view>
+</view>

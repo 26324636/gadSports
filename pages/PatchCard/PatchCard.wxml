@@ -1,0 +1,43 @@
+<view class='index-page'>
+<!-- 日历年月 -->
+<view class='head'>
+<view class='calendar_title flex_nowrap'>
+  <view class='icon' bindtap='lastMonth'>
+    <image src='../../images/left.png' />
+  </view>
+  <view>{{year}}年{{month}}月</view>
+  <view class='icon' bindtap='nextMonth'>
+    <image src='../../images/right.png' />
+  </view>
+</view>
+</view>
+<!-- 日历主体 -->
+<view class='calendar'>
+  <view class='header'>
+    <view wx:for='{{date}}' wx:key='' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}
+      <view></view>
+    </view>
+  </view>
+
+  <view class='date-box'>
+    <block wx:for='{{dateArr}}' wx:key=''>
+      <view data-id="{{item.isToday}}" data-no="{{isToday}}"  class='{{ item.isToday==isToday ? "nowDay" : ""}}||{{item.flag== qdflag ? "qd" : " "}}||{{item.flag== patchflag ? "qd2" : " "}}'>
+        <view class='date-head' bindtap="{{buttonClicked?'lookHuoDong':''}}" data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+          <view>{{item.dateNum}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>
+<view class='btn'>
+   <view class='cont-middle-help'>
+          温馨提示:
+          <ul>
+            <li>1.蓝色：今天日期；绿色：已签到；白色：未签到；黄色：审核中。</li>
+            <li>2.补卡请点击白色对应日期进行补卡！</li>
+            <li>3.补卡需要审核！</li>
+          </ul>
+        </view>
+</view>
+</view>
