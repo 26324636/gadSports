@@ -62,7 +62,7 @@
 
       </view>
          <view class='link-con'>
-         <view class='user' wx:for="{{monthlist}}"><view>{{item.departmentNum}}--{{item.account}}</view></view>
+         <view class='user' wx:for="{{monthlist}}"><view>{{item.departmentNum}}--{{item.account}}--{{item.count}}次</view></view>
          </view>
      
           
@@ -84,7 +84,7 @@
 
       </view>
          <view class='link-con'>
-         <view class='user' wx:for="{{weeklist}}"><view>{{item.departmentNum}}--{{item.account}}</view></view>
+         <view class='user' wx:for="{{weeklist}}"><view>{{item.departmentNum}}--{{item.account}}--{{item.count}}次</view></view>
          </view>
           
       

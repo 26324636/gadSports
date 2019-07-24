@@ -121,12 +121,13 @@ Page({
     } else {
       flag3 = true;
 
-      if (that.data.timebushu == '') {
+      if (that.data.timebushu.indexOf("小时") == '') {
         wx.showToast({
           title: '请输入时间/步数',
           duration: 1000,
           icon: "none"
         })
+        flag4 = false;
       } else if (that.data.timebushu.indexOf("小时") > 0) {
           flag4 = true;
       } else {
